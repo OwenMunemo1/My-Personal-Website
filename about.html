@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Owen Munemo - Home</title>
+    <title>Owen Munemo - About Me</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -33,22 +33,28 @@
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-      .profile-photo {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .profile-photo img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-      }
       h1 {
         text-align: center;
         color: #333;
       }
+      h2 {
+        color: #555;
+      }
       p {
         line-height: 1.6;
         color: #666;
+      }
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .about-me {
+        animation: fadeIn 2s ease-in-out;
       }
     </style>
   </head>
@@ -63,10 +69,12 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-      <div class="profile-photo">
-        <img src="profile.jpg" alt="Owen Munemo" />
-      </div>
-      <p>Welcome to my personal webpage!</p>
+      <h2>About Me</h2>
+      <p class="about-me">
+        Hello! I'm Owen Munemo, a 4th year Computer Science student at Northrise
+        University. I am passionate about graphic design, web development, and
+        software engineering.
+      </p>
     </div>
   </body>
 </html>
